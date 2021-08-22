@@ -19,6 +19,6 @@ from django.urls.conf import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('testStream/', include('testStream.urls')),
-    path('testUnity/', include('testUnity.urls')),
+    path('testUnity/', include('testUnity.urls'), name='testUnity'),
+    path('testMediapipeHand/', include('testMediapipeHand.urls'), name='testMediapipeHand'),
 ]
